@@ -131,3 +131,26 @@ main {
   background-color: #bb5c37;
   border-radius: 10px;
 }
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.scroll {
+  align-items: center;
+  color: #128a84;
+  display: flex;
+  justify-content: center;
+
+}
+
+.scroll:hover {
+  margin-top: 10px;
+  transition: 500ms;
+}
+
+.scroll:not(:hover) {
+  margin-bottom: 10px;
+  transition: 500ms;
+}
