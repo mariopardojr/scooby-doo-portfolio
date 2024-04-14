@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -29,7 +29,7 @@ h1 span {
   color: #128a84;
 }
 
-.title:hover span{
+.title:hover span {
   color: white;
   transition: 500ms;
 }
@@ -39,19 +39,19 @@ h1 span {
   transition: 500ms;
 }
 
-.title:not(:hover) span{
+.title:not(:hover) span {
   color: #128a84;
   transition: 500ms;
 }
 
-.title:not(:hover)  {
+.title:not(:hover) {
   color: white;
   transition: 500ms;
 }
 
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   padding: 50px 70px;
 }
 
@@ -73,7 +73,7 @@ h1 span {
   display: flex;
   gap: 100px;
   justify-content: center;
-  margin: 120px 0
+  margin: 120px 0;
 }
 
 main {
@@ -85,7 +85,7 @@ main {
 .nav-list {
   display: flex;
   gap: 20px;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .nav-link a {
@@ -105,7 +105,7 @@ main {
 }
 
 .avatar {
-  border: 10px solid #128a84;
+  border: 10px ridge #128a84;
   border-radius: 100%;
   width: 400px;
 }
@@ -132,7 +132,7 @@ main {
   border-radius: 10px;
 }
 
-.icon {
+.icon-mouse {
   height: 50px;
   width: 50px;
 }
@@ -142,7 +142,6 @@ main {
   color: #128a84;
   display: flex;
   justify-content: center;
-
 }
 
 .scroll:hover {
@@ -153,4 +152,58 @@ main {
 .scroll:not(:hover) {
   margin-bottom: 10px;
   transition: 500ms;
+}
+
+.skills {
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  padding: 150px 0;
+}
+
+.skill-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.skill-item {
+  align-items: center;
+  background-color: #79af30;
+  border: 2px solid #8db15f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px 39px;
+}
+
+.skill-item:hover {
+  border: 2px solid #4b0055;
+  transition: 1000ms;
+}
+
+.skill-item:not(:hover) {
+  border: 2px solid #8db15f;
+  transition: 1000ms;
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.icon {
+  color: #4b0055;
+  font-size: 60px;
+}
+
+.skills h1 {
+  font-size: 3rem;
+}
+
+.skills p {
+  color: #4b0055;
+  font-weight: 600;
 }
