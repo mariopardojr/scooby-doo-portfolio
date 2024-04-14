@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #4b0055;
+  background-image: url(/assets/background.png);
+  margin: 0%;
+}
+
+.header {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 40px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 span {
+  color: #128a84;
+}
+
+.title:hover span{
+  color: white;
+  transition: 500ms;
+}
+
+.title:hover {
+  color: #128a84;
+  transition: 500ms;
+}
+
+.title:not(:hover) span{
+  color: #128a84;
+  transition: 500ms;
+}
+
+.title:not(:hover)  {
+  color: white;
+  transition: 500ms;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  padding: 50px 70px;
+}
+
+.container:nth-child(even) {
+  background-color: #128a84;
+}
+
+.container h1 {
+  color: white;
+}
+
+.welcome {
+  align-self: center;
+  font-size: 2rem;
+}
+
+.about {
+  align-items: center;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 120px 0
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none
+}
+
+.nav-link a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  color: #128a84;
+  transition: 500ms;
+}
+
+.nav-link a:not(:hover) {
+  color: white;
+  transition: 500ms;
+}
+
+.avatar {
+  border: 10px solid #128a84;
+  border-radius: 100%;
+  width: 400px;
+}
+
+.description {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description h1 {
+  color: #128a84;
+  font-size: 3rem;
+}
+
+::-webkit-scrollbar {
+  background-color: #4b0055;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bb5c37;
+  border-radius: 10px;
+}
