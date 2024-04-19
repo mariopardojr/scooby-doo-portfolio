@@ -199,11 +199,27 @@ main {
   font-size: 60px;
 }
 
-.skills h1 {
+/* .skills h1 {
   font-size: 3rem;
 }
 
 .skills p {
   color: #4b0055;
   font-weight: 600;
+} */
+
+.projects {
+  display: flex;
 }
+
+.section-title {
+  font-size: 3rem;
+}
+
+.section-subtitle {
+  color: #4b0055;
+  font-weight: 600;
+}
+
+
+   
