@@ -14,6 +14,8 @@ body {
 
 .header {
   align-items: center;
+  background-color: #4b0055;
+  background-image: url(/assets/background.png);
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -154,13 +156,6 @@ main {
   transition: 500ms;
 }
 
-.skills {
-  flex-direction: row;
-  gap: 60px;
-  justify-content: center;
-  padding: 150px 0;
-}
-
 .skill-list {
   display: flex;
   gap: 20px;
@@ -172,14 +167,17 @@ main {
   background-color: #79af30;
   border: 2px solid #8db15f;
   border-radius: 5px;
+  color: #4b0055;
   display: flex;
   flex-direction: column;
+  font-weight: 600;
   gap: 10px;
   padding: 25px 39px;
 }
 
 .skill-item:hover {
   border: 2px solid #4b0055;
+  transform: scale(1.1);
   transition: 1000ms;
 }
 
@@ -199,11 +197,48 @@ main {
   font-size: 60px;
 }
 
-.skills h1 {
+.section-title {
   font-size: 3rem;
 }
 
-.skills p {
+.section-subtitle {
   color: #4b0055;
   font-weight: 600;
+}
+
+.section-subtitle-light {
+  color: #128a84;
+  font-weight: 600;
+}
+.section-container {
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  padding: 150px 0;
+}
+
+.section-container {
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  padding: 150px 0;
+}
+
+.projects-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.projects-image {
+  width: 350px;
+}
+
+.project-item:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.project-item:not(:hover) {
+  transition: 500ms;
 }
