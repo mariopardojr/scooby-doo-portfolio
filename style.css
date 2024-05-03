@@ -265,7 +265,7 @@ form {
 
 label {
   border-radius: 10px;
-  color: #4b0055;
+  color: #128a84;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -341,4 +341,18 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.brief-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.brief-item {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #bb5c37;
+  color: white
 }
