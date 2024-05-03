@@ -57,16 +57,9 @@ h1 span {
   padding: 50px 70px;
 }
 
-.container:nth-child(even) {
-  background-color: #128a84;
-}
-
-.container h1 {
-  color: white;
-}
-
 .welcome {
   align-self: center;
+  color: white;
   font-size: 2rem;
 }
 
@@ -156,20 +149,24 @@ main {
   transition: 500ms;
 }
 
+.list-item-base {
+  align-items: center;
+  background-color: #79af30;
+  border: 2px solid #8db15f;
+  display: flex;
+  flex-direction: column;
+}
+
 .skill-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   list-style-type: none;
 }
 
 .skill-item {
-  align-items: center;
-  background-color: #79af30;
-  border: 2px solid #8db15f;
   border-radius: 5px;
   color: #4b0055;
-  display: flex;
-  flex-direction: column;
   font-weight: 600;
   gap: 10px;
   padding: 25px 39px;
@@ -177,6 +174,7 @@ main {
 
 .skill-item:hover {
   border: 2px solid #4b0055;
+  color: #4b0055;
   transform: scale(1.1);
   transition: 1000ms;
 }
@@ -193,8 +191,14 @@ main {
 }
 
 .icon {
-  color: #4b0055;
   font-size: 60px;
+}
+
+.section-container {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  padding: 150px 0;
 }
 
 .section-title {
@@ -225,18 +229,13 @@ main {
   color: #128a84;
   font-weight: 600;
 }
-.section-container {
-  flex-direction: row;
-  gap: 60px;
-  justify-content: center;
-  padding: 150px 0;
+
+.section-container:nth-child(even) {
+  background-color: #128a84;
 }
 
-.section-container {
-  flex-direction: row;
-  gap: 60px;
-  justify-content: center;
-  padding: 150px 0;
+.section-container h1 {
+  color: white;
 }
 
 .projects-list {
@@ -256,4 +255,90 @@ main {
 
 .project-item:not(:hover) {
   transition: 500ms;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  border-radius: 10px;
+  color: #4b0055;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 5px;
+}
+
+input,
+textarea {
+  border: 2px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  outline: none;
+  padding: 8px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #4b0055;
+  outline: none;
+  transition: 500ms;
+}
+
+.submit-button {
+  background-color: #79af30;
+  border: none;
+  border: 1px solid #79af30;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.submit-button:active {
+  border: 1px solid #8a8a8a;
+  opacity: 80%;
+}
+
+.contact-icon {
+  width: 80px;
+}
+
+.contact-item {
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.contact-item:hover {
+  border-color: #4b0055;
+  transition: 500ms;
+}
+
+.contact-item:not(:hover) {
+  transition: 500ms;
+}
+
+.contact-item p {
+  color: #4b0055;
+  font-weight: 600;
+}
+
+.contact-list {
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.contact-list li {
+  list-style-type: none;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }

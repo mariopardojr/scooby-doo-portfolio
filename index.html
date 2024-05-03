@@ -10,7 +10,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="assets/scooby-paw.svg.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/scooby-paw.svg" />
   </head>
   <body>
     <header id="home" class="header">
@@ -40,89 +40,89 @@
         <div class="about">
           <img
             class="avatar"
-            src="assets/image.png"
+            src="assets/scooby-avatar.png"
             alt="Foto de perfil do Scooby-Doo"
           />
           <div class="description">
             <h1>Olá! Sou Scooby-Doo!</h1>
-            <h3>
+            <h2>
               Desenvolvedor de Software | Investigador de Bugs Profissional
-            </h3>
-            <p>
+            </h2>
+            <h3>
               Apaixonado por desvendar mistérios e códigos!<br />
               Com uma vasta experiência em desenvolvimento de aplicativos e
               resolução de problemas,<br />
               estou sempre pronto para mergulhar em novos desafios e encontrar
               soluções inovadoras.<br />
-            </p>
+            </h3>
           </div>
         </div>
         <div class="scroll">
-          <img class="icon-mouse" src="assets/mouse.svg" alt="" />
+          <img class="icon-mouse" src="assets/icons/mouse.svg" alt="" />
           <h2>Role para baixo</h2>
         </div>
       </section>
-      <section id="skill" class="container section-container">
+      <section id="skill" class="section-container">
         <div>
           <h1 class="section-title">Habilidades</h1>
           <p class="section-subtitle">Tecnologias que possuo experiência!</p>
         </div>
         <div class="skills-box">
           <ul class="skill-list">
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-html5-plain icon"></i>
               <p>HTML5</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-css3-plain icon"></i>
               <p>CSS3</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-typescript-plain icon"></i>
               <p>TS</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-react-plain icon"></i>
               <p>React</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-angular-plain icon"></i>
               <p>Angular</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-vuejs-plain icon"></i>
               <p>Vue</p>
             </li>
           </ul>
           <ul class="skill-list">
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-nextjs-plain icon"></i>
               <p>Next.js</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-nodejs-plain icon"></i>
               <p>Node.js</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-amazonwebservices-plain-wordmark icon"></i>
               <p>AWS</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-git-plain icon"></i>
               <p>Git</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-github-plain icon"></i>
               <p>GitHub</p>
             </li>
-            <li class="skill-item">
+            <li class="skill-item list-item-base">
               <i class="devicon-tailwindcss-original icon"></i>
               <p>Tailwind</p>
             </li>
           </ul>
         </div>
       </section>
-      <section id="project" class="container section-container">
+      <section id="project" class="section-container">
         <div>
           <h1 class="section-title">Projetos</h1>
           <p class="section-subtitle-light">
@@ -142,8 +142,58 @@
           </li>
         </ul>
       </section>
-      <section id="contact" class="container">
-        <h1>Contato</h1>
+      <section id="contact" class="section-container">
+        <div>
+          <h1 class="section-title">Contato</h1>
+          <p class="section-subtitle">Fale comigo!</p>
+        </div>
+        <form>
+          <h2 class="section-subtitle">Deixe uma mensagem!</h2>
+          <label>
+            Nome:
+            <input type="text" name="name" />
+          </label>
+          <label>
+            Mensagem:
+            <textarea cols="30" rows="10"></textarea>
+          </label>
+          <button class="submit-button" type="reset">Enviar</button>
+        </form>
+        <div class="contact-section">
+          <h2 class="section-subtitle">Ou entre contato comigo em:</h2>
+          <ul class="contact-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="contact-item list-item-base"
+              >
+                <img class="contact-icon" src="assets/icons/linkedin.svg" />
+                <p>LinkedIn</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="contact-item list-item-base"
+              >
+                <img class="contact-icon" src="assets/icons/instagram.svg" />
+                <p>Instagram</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.whatsapp.com/"
+                target="_blank"
+                class="contact-item list-item-base"
+              >
+                <img class="contact-icon" src="assets/icons/whatsapp.svg" />
+                <p>WhatsApp</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>
