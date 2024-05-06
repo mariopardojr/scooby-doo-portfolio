@@ -118,12 +118,12 @@ main {
 }
 
 ::-webkit-scrollbar {
-  background-color: #4b0055;
+  background-color: #8e6345;
   width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #bb5c37;
+  background-color: #79af30;
   border-radius: 10px;
 }
 
@@ -162,6 +162,8 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   list-style-type: none;
+  max-width: fit-content;
+  /* justify-content: flex-start; */
 }
 
 .skill-item {
@@ -197,21 +199,8 @@ main {
 .section-container {
   display: flex;
   gap: 5%;
-  justify-content: center;
-  padding: 150px 0;
-}
-
-.section-title {
-  font-size: 3rem;
-}
-
-.section-subtitle {
-  color: #4b0055;
-  font-weight: 600;
-} */
-
-.projects {
-  display: flex;
+  justify-content: space-between;
+  padding: 150px 250px;
 }
 
 .section-title {
@@ -223,8 +212,15 @@ main {
   font-weight: 600;
 }
 
+.section-title {
+  font-size: 3rem;
+}
 
-   
+.section-subtitle {
+  color: #4b0055;
+  font-weight: 600;
+}
+
 .section-subtitle-light {
   color: #128a84;
   font-weight: 600;
@@ -242,15 +238,22 @@ main {
   display: flex;
   gap: 20px;
   list-style-type: none;
+  flex-wrap: wrap;
+  max-width: fit-content;
 }
 
 .projects-image {
   width: 350px;
+  border-radius: 10px;
 }
 
 .project-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.4);
   transition: 500ms;
+}
+
+.project-item h1 {
+  display: none;
 }
 
 .project-item:not(:hover) {
@@ -343,16 +346,16 @@ textarea:focus {
   gap: 30px;
 }
 
-.brief-list {
+.testimonials-list {
   list-style-type: none;
   display: flex;
   gap: 20px;
   flex-direction: column;
 }
 
-.brief-item {
+.testimonial-item {
   padding: 20px;
   border-radius: 10px;
-  background-color: #bb5c37;
-  color: white
+  background-color: #79af30;
+  color: white;
 }
