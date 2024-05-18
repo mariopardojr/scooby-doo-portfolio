@@ -20,6 +20,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 40px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 .header a {
@@ -61,6 +64,7 @@ h1 span {
   align-self: center;
   color: white;
   font-size: 2rem;
+  margin-top: 100px;
 }
 
 .about {
@@ -250,6 +254,8 @@ main {
 .project-item:hover {
   transform: scale(1.4);
   transition: 500ms;
+  position: relative;
+  z-index: 9;
 }
 
 .project-item h1 {
@@ -258,6 +264,16 @@ main {
 
 .project-item:not(:hover) {
   transition: 500ms;
+}
+
+.project-title {
+  color: white;
+  display: none;
+}
+
+.project-item:hover .project-title {
+  display: block;
+  transition: 500ms
 }
 
 form {
@@ -281,7 +297,7 @@ textarea {
   border-radius: 5px;
   outline: none;
   padding: 8px;
-  resize: none;
+  width: 100%;
 }
 
 input:focus,
@@ -358,4 +374,11 @@ textarea:focus {
   border-radius: 10px;
   background-color: #79af30;
   color: white;
+  font-weight: 600;
+}
+
+.testimonial-author {
+  font-style: italic;
+  margin-top: 10px;
+  text-align: right;
 }
